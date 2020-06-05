@@ -10,13 +10,16 @@
 </div>
 <div class="row ml-auto">
   <div class="col-xs-12">
-    <div class="btn-group">
-      <button type="button" class="btn btn-primary dropdown-toggle" role="button">Manage Recipe</button>
-      <ul class="dropdown-menu">
-        <li><a href="#">Add ingredient to list</a></li>
-        <li><a href="#">Edit recipe</a></li>
-        <li><a href="#">Delete recipe</a></li>
-      </ul>
+    <div ngbDropDown class="dropdown">
+      <div class="btn-group">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Manage Recipe
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item"><a href="#">Add ingredient to list</a></a>
+          <a class="dropdown-item"><a href="#">Edit recipe</a></a>
+          <a class="dropdown-item"><a href="#">Delete recipe</a></a>
+        </div>
+      </div>
     </div>
   </div>
 </div>
