@@ -1,0 +1,32 @@
+<div class="row ml-auto mt-5">
+  <div class="col-xs-12">
+    <img [src]="recipe.imagePath" alt="{{recipe.name}}" class="img-fluid">
+  </div>
+</div>
+<div class="row ml-auto">
+  <div class="col-xs-12">
+    <h1>{{recipe.name}}</h1>
+  </div>
+</div>
+<div class="row ml-auto">
+  <div class="col-xs-12">
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary dropdown-toggle" role="button">Manage Recipe</button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Add ingredient to list</a></li>
+        <li><a href="#">Edit recipe</a></li>
+        <li><a href="#">Delete recipe</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="row ml-auto">
+  <div class="col-xs-12">
+    {{recipe.description}}
+  </div>
+</div>
+<div class="row ml-auto">
+  <div class="col-xs-12">
+    Ingredients
+  </div>
+</div>
