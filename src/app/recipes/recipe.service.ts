@@ -1,4 +1,4 @@
-import {EventEmitter, Injectable} from "@angular/core";
+import {Injectable} from "@angular/core";
 import {Recipe} from "./recipe.model";
 import {Ingredient} from "../shared/ingredient.model";
 import {ShoppingListService} from "../shopping-list/shopping-list.service";
@@ -12,7 +12,6 @@ export class RecipeService {
     new Recipe('Ramen Recipe', 'Shoyu Ramen', 'https://pickledplum.com/wp-content/uploads/2018/02/shoyu-ramen-3202.jpg',
       [new Ingredient('Soy Sauce', 150), new Ingredient('Nori Sheets', 2)])
   ];
-  recipeSelected = new EventEmitter<Recipe>();
 
   constructor(private shoppingListService: ShoppingListService) {
   }
