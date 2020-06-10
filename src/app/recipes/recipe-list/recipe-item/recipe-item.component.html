@@ -1,4 +1,8 @@
-<a href="#" class="list-group-item clearfix bg-light text-dark" style="width: 375px; height: auto" (click)="onSelected()">
+<a
+  class="list-group-item clearfix bg-light text-dark"
+  style="width: 375px; height: auto; cursor: pointer"
+  [routerLink]="[index]"
+  routerLinkActive="active">
   <div class="float-left">
     <div class="d-flex justify-content-between">
       <h4 class="mb-1 mr-2">{{recipe.name}}</h4>
